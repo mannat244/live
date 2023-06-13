@@ -23,16 +23,33 @@
       width: 100%;
       height: 100%;
     }
+
+    /* Add custom styles for the text */
+    .upcoming-session {
+      font-size: 20px;
+      font-family: 'Geologica', sans-serif;
+    }
+
+    .past-sessions {
+      font-size: 20px;
+      font-family: 'Geologica', sans-serif;
+    }
   </style>
   <!-- Add your external CSS stylesheets here -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Add the Google Fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
   <main>
     <div class="container">
+      <p class="upcoming-session">Upcoming session</p>
       <iframe class="responsive-iframe" src="https://www.youtube.com/embed/JM5avJlkFYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="container">
+      <p class="past-sessions">Past Sessions</p>
       <iframe class="responsive-iframe" src="https://www.youtube.com/embed/JM5avJlkFYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="container">
