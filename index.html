@@ -10,7 +10,7 @@
       overflow: hidden;
       width: 100%;
       padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-      margin-bottom: 10px; /* Add a 20px gap between the videos */
+      margin-bottom: 20px; /* Add a 40px gap between the videos */
     }
 
     /* Then style the iframe to fit in the container div with full height and width */
@@ -25,14 +25,16 @@
     }
 
     /* Add custom styles for the text */
-    .upcoming-session {
-      font-size: 20px;
-      font-family: 'Geologica', sans-serif;
+    .video-heading {
+      font-size: 24px;
+      color: black;
+      margin-bottom: 20px; /* Add a 20px gap below the headings */
+      font-family: 'Geologica', sans-serif; /* Apply the Geologica font */
     }
 
-    .past-sessions {
-      font-size: 20px;
-      font-family: 'Geologica', sans-serif;
+    /* Add custom styles for the text above the first video */
+    #upcoming-heading {
+      margin-top: 20px; /* Add a 40px gap above the first heading */
     }
   </style>
   <!-- Add your external CSS stylesheets here -->
@@ -44,20 +46,11 @@
 </head>
 <body>
   <main>
-    <div class="container">
-      <p class="upcoming-session">Upcoming session</p>
-      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/JM5avJlkFYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="container">
-      <p class="past-sessions">Past Sessions</p>
-      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/JM5avJlkFYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+    <h2 class="video-heading" id="upcoming-heading">Upcoming session</h2>
     <div class="container">
       <iframe class="responsive-iframe" src="https://www.youtube.com/embed/JM5avJlkFYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <div class="container">
-      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/JM5avJlkFYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+    <h2 class="video-heading">Past Sessions</h2>
     <div class="container">
       <iframe class="responsive-iframe" src="https://www.youtube.com/embed/JM5avJlkFYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
