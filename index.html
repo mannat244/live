@@ -1,59 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Add your CSS stylesheets or internal styles here -->
-  <style>
-    .container {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-      margin-bottom: 20px; /* Add a 40px gap between the videos */
-    }
-
-    /* Then style the iframe to fit in the container div with full height and width */
-    .responsive-iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    /* Add custom styles for the text */
-    .video-heading {
-      font-size: 24px;
-      color: black;
-      margin-bottom: 20px; /* Add a 20px gap below the headings */
-      font-family: 'Geologica', sans-serif; /* Apply the Geologica font */
-    }
-
-    /* Add custom styles for the text above the first video */
-    #upcoming-heading {
-      margin-top: 20px; /* Add a 40px gap above the first heading */
-    }
-  </style>
-  <!-- Add your external CSS stylesheets here -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- Add the Google Fonts link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+        }
+    </style>
 </head>
 <body>
-  <main>
-    <h2 class="video-heading" id="upcoming-heading">Upcoming session</h2>
     <div class="container">
-      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/weVfzKNd1iw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <a href="https://chat-app-54e9ed.zapier.app/taiyari-bot" target="_blank">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMOiwTMeeoa4hBGkkQAfsMC39vDb-KuUpijNlhcxmhTkqruF1GHf9d1UulPzU1M3uricojJi5pE-04mrFfOghY-FfHO0m3f3oXRBLI-CqmPd5mLrvr1kLm4gnkx8lKA3i-KvxL_8skOBY7b-rh7J534QZeFoT5rPTrTFaRGCKePNRwqkdFAL4KTi9mQVI/w640-h360/Access%20Quality%20Materials%20For%20Absolutely%20Free!%20(3).png" alt="Image 1">
+        </a>
+        <a href="https://www.collegetaiyari.online/p/josaa-2023-24-predictor.html" target="_blank">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAJJrN8Da-BD5KZawOjh57iF5Utyj9nz60gt1Q3j5OynLRCsbbJJ3PnK4a9aIat00aLzN3-S4vDNWtpZQMOZGawrF-LHfHmfiqmUpoZX-BrC9aFDlpFzttwYXNpUrx5-GZO92blU3GSBMlcxKjXjSqNSazLiyIFPxL-H6kqunN7i0P6cM1t6Wz6ivs-_E/w640-h360/Access%20Quality%20Materials%20For%20Absolutely%20Free!%20(2).png" alt="Image 2">
+        </a>
+        <a href="https://www.collegetaiyari.online/p/csab-choice-filling-2023.html" target="_blank">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbZJna8skOLBYwLpnCpHtUxFgOjla2fplWwKtt8fNUB2BEgIlBK9f8QQZWJMRLDdqixosG8dLbHYdj3LmUxYC5JQEX72J4A0Zm7BDjzyYe6dYChfMtY1sN-xKyvVAIOrewvhSP_JIKBliWTnf_hWjAiUlhzwqEH_tioO1p8NY8KizoYKOALGIBbzZ7clw/w640-h360/Access%20Quality%20Materials%20For%20Absolutely%20Free!%20(1).png" alt="Image 3">
+        </a>
     </div>
-    <h2 class="video-heading">Past Sessions</h2>
-    <div class="container">
-      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/JM5avJlkFYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-  </main>
 </body>
 </html>
